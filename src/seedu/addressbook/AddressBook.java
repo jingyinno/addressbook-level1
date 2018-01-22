@@ -147,9 +147,9 @@ public class AddressBook {
      * used by the internal String[] storage format.
      * For example, a person's name is stored as the 0th element in the array.
      */
-    private static final int PERSON_DATA_INDEX_NAME = 0;
-    private static final int PERSON_DATA_INDEX_PHONE = 1;
-    private static final int PERSON_DATA_INDEX_EMAIL = 2;
+//    private static final int PERSON_DATA_INDEX_NAME = 0;
+//    private static final int PERSON_DATA_INDEX_PHONE = 1;
+//    private static final int PERSON_DATA_INDEX_EMAIL = 2;
 
     /**
      * The number of data elements for a single person.
@@ -854,7 +854,7 @@ public class AddressBook {
      * @param person whose phone number you want
      */
     private static String getPhoneFromPerson(HashMap<String, String> person) {
-        return person.get(PERSON_DATA_INDEX_PHONE);
+        return person.get(PERSON_PROPERTY_PHONE);
     }
 
     /**
@@ -863,7 +863,7 @@ public class AddressBook {
      * @param person whose email you want
      */
     private static String getEmailFromPerson(HashMap<String, String> person) {
-        return person.get(PERSON_DATA_INDEX_EMAIL);
+        return person.get(PERSON_PROPERTY_EMAIL);
     }
 
     /**
